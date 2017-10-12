@@ -114,7 +114,6 @@ public class QuiltApp implements ActionListener {
             
         }
         
-        frame.remove(quilt);
         quilt = new Quilt(scale,r,g,b);
     
         
@@ -122,7 +121,6 @@ public class QuiltApp implements ActionListener {
         quilt.buildQuilt(0, nil);
         
         frame.add(quilt);
-        frame.getContentPane().revalidate();
         frame.getContentPane().repaint();
         
     }
